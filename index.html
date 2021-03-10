@@ -5,14 +5,17 @@
 <body>
 		<div style="margin-top:13%">
 			<center>
-				<img src="loader.webp" height = 40% width = 40%>
+				<img src="loader.webp">
 				<h3 style="font-family:Consolas"> <u> Loading Profile; Please Wait. </u> <h3>
 			</center>
 		</div>
 <script>
 setTimeout(function(){
-	document.getElementsByTagName('h3')[0].innerHTML = '<h6>WELCOME TO MY PROFILE</h6> - <b>SITE UNDER DEVELOPEMENT</b>';
-	document.getElementsByTagName('img')[0].src = 'emoji.gif';
+	document.getElementsByTagName('h3')[0].innerHTML = '<h6>WELCOME</h6> - <b>SITE UNDER DEVELOPEMENT</b>';
+	var img = document.getElementsByTagName('img')[0]
+	img.src = 'emoji.gif';
+	img.height = 40%;
+	img.width = 40%;
 },1000);
 </script>
 </body>
